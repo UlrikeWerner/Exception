@@ -21,6 +21,8 @@ public class StudentServiceTest {
             Assertions.assertEquals(testStudent, actual);
         } catch(NoSuchElementException e){
             System.out.println("Es sollte nicht ausgeführt werden.");
+        } catch (Exception e){
+            System.out.println("Und das sollte überhaupt nicht passieren! Unerwarteter Fehler!");
         }
     }
 
